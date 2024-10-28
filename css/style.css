@@ -1,0 +1,149 @@
+/* General styles */
+body {
+    height: 100vh;
+    background-color: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styles */
+nav {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(108, 107, 185, 1) 0%, rgba(58, 123, 213, 1) 100%);
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #f5f5f5;
+    margin-top: 5px;
+}
+
+/* Chat container styles */
+.container {
+    max-width: 960px;
+    width: 100%;
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+}
+
+/* Message styling */
+.message {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+    background-color: #6c6bb9;
+    color: white;
+}
+
+/* Input and Button Styles */
+#send-container {
+    display: block;
+    margin: auto;
+    max-width: 985px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#messageInp {
+    width: 92%; /* Increase the width to make it wider */
+    padding: 15px; /* Optional: Increase the padding for a more spacious feel */
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+#messageInp:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn {
+    width: 30%;
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #6c6bb9;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #4e4d8e;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .container {
+        height: 70vh;
+    }
+
+    #messageInp {
+        width: 70%;
+    }
+
+    .btn {
+        width: 50%;
+    }
+}
